@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body{
+            height: 100vh;
+            width: 100vw;
+        }
+        h1{
+            text-align: center;
+        }
+        #redlight{
+            background-color:white;
+            flex: 1;
+            animation-name: redlight;
+            animation-duration: 4s;
+        }
+        #yellowlight{
+            background-color: white;
+            flex: 1;
+            animation-name: yellowlight;
+            animation-duration: 2s;
+            animation-delay: 4s;
+        }
+        #greenlight{
+            background-color: white;
+            flex: 1;
+            animation-name: greenlight;
+            animation-duration: 3s;
+            animation-delay:6s;
+        }
+        .flexbox{
+            display:flex;
+            flex-direction: column;
+            margin-left:auto;
+            margin-right: auto;
+            height: 300px;
+            width: 100px;
+            border: 5px solid black;
+        }
+
+        @keyframes redlight {
+            from {background-color: white;}
+            to {background-color: red;}
+        }
+
+        @keyframes yellowlight {
+            from {background-color: white;}
+            to {background-color: yellow;}
+        }
+
+        @keyframes greenlight {
+            from {background-color: white;}
+            to {background-color: green;}
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Practicing changing color</h1>
+    <div class="flexbox">
+        <div id="redlight"></div>
+        <div id="yellowlight"></div>
+        <div id="greenlight"></div>
+    </div>
+</body>
+</html>

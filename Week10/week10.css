@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html body{
+    min-height: 100%;
+    width: 100%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    padding: 10px;
+    gap: 5px;
+}
+
+.grid-item{
+    position:relative;
+    background-color: white;
+    border: 5px solid #000000;
+}
+
+.item-cover{
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    text-shadow: 5px 5px 5x;
+}
+
+.item-cover:hover{
+    transform: scale(1.02);
+    transition: 0.3 ease-in-out;
+}
+
+.item-content{
+    font-size: 1.5rem;
+    font-family: 'Patrick Hand', cursive;
+    padding: 15px;
+    height: 100%;
+}
+
+.item-content > p{
+    margin-bottom: 3vh;
+}
+.item-content > ul{
+    list-style-position: inside;
+}
+
+.item-content li{
+    margin-bottom: 30px;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#item-1-cover{
+    background: url('./internet.jpg');
+    background-position: center;
+    background-size:cover;
+}
+
+#item-2-cover{
+    background: linear-gradient(rgba(0,0,0, 0.5),rgba(0, 0, 0, 0.5)), url('./social-media.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#item-3-cover{
+    background: linear-gradient(rgba(0,0,0, 0.5),rgba(0, 0, 0, 0.5)), url('./nyu.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#item-4-cover{
+    background: url('./mcluhan.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+#item-2-content img{
+    max-width: 50%;
+}
