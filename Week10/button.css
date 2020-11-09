@@ -1,0 +1,78 @@
+body{
+    background-color: peachpuff;
+    color: black;
+    display: block;
+}
+
+.food-items{
+    top: 140px;
+    left: 50px;
+    position: absolute;
+    visibility: hidden;
+    height: 500px;
+}
+.logo{
+    height: 100px;
+}
+
+.logo-btn{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+    width: 400px;
+}
+.coke-btn{
+    background-color: aqua;
+}
+.sprite-btn{
+    background-color: aquamarine;
+}
+.dorito-btn{
+    background-color: azure;
+}
+.kitkat-btn{
+    background-color: bisque;
+}
+.logo-btn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#light-section{
+    /* background-color: black; */
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* justify-content: center; */
+    /* align-items: center; */
+
+}
+#lightbulb_img{
+    width: 500px;
+}
+
+.food-section{
+    /* border: 1px solid white; */
+    width: 40%;
+}
+
+.button-section{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid white; */
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#button-text{
+    font-size: 80px;
+}
+#btn{
+    /* border: 1px solid white; */
+    border-radius: 50%;
+    min-width: 50px;
+    min-height: 50px;
+    background: red;
+}
